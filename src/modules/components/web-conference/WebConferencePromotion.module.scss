@@ -1,0 +1,121 @@
+@import 'src/modules/scss-mixins/Colors&Fonts.scss';
+
+.mainWrapper {
+  border-top: 1px solid rgba(0, 0, 0, 0.38);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+  padding: 50px;
+  background: url('../../assets/images/promotionBackground.jpg') center;
+  height: 90vh;
+  background-attachment: fixed;
+  background-size: cover;
+
+  .colWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .specialOffer {
+      font-size: 25px;
+      text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.12);
+    }
+
+    .promotionList {
+      justify-content: center;
+
+      .roboOwnerLink{
+        @include black-font;
+        text-align: center;
+        font-size: 17px;
+      }
+
+
+      .promotionListItem {
+        display: flex;
+        font-weight: bold;
+        margin-bottom: 20px;
+        align-items: center;
+
+        &:before {
+          content: url("https://img.icons8.com/ios-filled/20/000000/horizontal-line.png");
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+
+  .underHeader {
+    font-size: 20px;
+  }
+
+  .registrationLink {
+    @include mainButton
+  }
+}
+
+.content {
+  @include black-font;
+  justify-content: center;
+
+  h2 {
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainWrapper{
+    font-size: 14px;
+    background-attachment: scroll;
+    background-size: cover;
+    height: auto;
+    padding: 20px;
+
+    .content {
+      text-align: center;
+      h2{
+        font-size: 25px;
+      }
+      div{
+        font-size: 19px;
+      }
+    }
+
+    .promotionList{
+      margin-top: 40px;
+    }
+    .specialOffer{
+      text-align: center;
+      font-size: 20px !important;
+    }
+  }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px){
+  .mainWrapper{
+    font-size: 14px;
+    background-attachment: scroll;
+    background-size: cover;
+    height: auto;
+    padding: 20px;
+
+    .content {
+      text-align: center;
+      h2{
+        font-size: 25px;
+      }
+      div{
+        font-size: 19px;
+      }
+    }
+
+    .promotionList{
+      margin-top: 40px;
+    }
+    .specialOffer{
+      text-align: center;
+      font-size: 20px !important;
+    }
+  }
+
+}

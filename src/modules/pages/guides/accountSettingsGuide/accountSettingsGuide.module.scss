@@ -1,0 +1,28 @@
+.mainWrapper{
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-family: Montserrat;
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vw;
+
+  .mainHeadline{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+  }
+  .underHeadline{
+    margin-top: 15px;
+    font-style: normal;
+    font-size: 24px;
+  }
+}
+
+.accountItems{
+  margin-top: 5vw;
+}

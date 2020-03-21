@@ -1,0 +1,166 @@
+
+.mainWrapper {
+  background: rgb(73, 92, 134);
+  background: linear-gradient(180deg, #495c86 6%, #212237 97%);
+  display: flex;
+  align-items: center;
+}
+
+.tryFree {
+  position: relative;
+  margin-top: -80px;
+
+  button {
+    outline: none;
+    text-align: center;
+    font-size: 11pt;
+    border: solid 1px #506292;
+    padding: 14px 28px;
+    background: #4d6297;
+    color: #f7f7f7;
+    font-weight: 600;
+    margin: 15px 5px;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    width: fit-content;
+    box-shadow: 0px 3px 8px 2px #282c341c;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  button:hover {
+    background: #425484;
+  }
+}
+
+.description {
+  color: white;
+  padding-left: 5vw;
+  font-family: 'Montserrat';
+  font-style: normal;
+
+  .descriptionHeader {
+    font-size: 40px;
+    font-weight: bold;
+
+  }
+
+  .underDescriptionHeader {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    div {
+      margin-right: 15px;
+      font-style: italic;
+      display: flex;
+    }
+  }
+
+  button {
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 11pt;
+    border: solid 1px #506292;
+    padding: 5px 15px;
+    background: #4d6297;
+    color: white;
+    border-radius: 5px;
+    width: fit-content;
+    box-shadow: 0px 3px 8px 2px #282c341c;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  button:hover {
+    background: #425484;
+  }
+
+  .advantagesDecription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    .functionItems {
+      display: flex;
+      align-items: center;
+      margin-top: 9px;
+    }
+
+    .functionItems:before {
+      content: url("../../assets/images/Vectorcheck.png");
+      margin-right: 15px;
+    }
+  }
+}
+
+.laptop {
+  margin: 80px 0;
+  -webkit-filter: drop-shadow(1px 10px 10px #0000006b);
+  max-width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+  .description {
+    margin-top: 40px;
+  }
+  .descriptionHeader {
+    font-size: 25px !important;
+  }
+  .laptop {
+    display: none;
+  }
+  .mainWrapper {
+    background: linear-gradient(180deg, #495c86 6%, #2e304b 97%);
+    padding: 10px;
+  }
+  .advantagesDecription {
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  .tryFree {
+    text-align: center;
+    margin: 35px 0 -35px 0;
+  }
+  .moreAbout {
+    text-align: center;
+  }
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .descriptionHeader {
+    font-size: 25px !important;
+  }
+  .laptop {
+    display: none;
+  }
+  .mainWrapper {
+    background: rgb(73, 92, 134);
+    background: linear-gradient(180deg, #495c86 6%, #212237 97%);
+    padding: 30px;
+  }
+  .advantagesDecription {
+    font-size: 15px;
+  }
+  .tryFree {
+    text-align: center;
+    margin: 35px 0 -35px 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .laptop {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 1700px) {
+  .mainWrapper{
+    height: 80vh;
+  }
+}

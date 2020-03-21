@@ -1,0 +1,65 @@
+
+$purple: rgba(77, 98, 151, 0.12);
+$white1: #f7f7f7;
+$white2: #f3f3f3;
+
+@mixin black-font {
+  font: {
+    family: 'Montserrat', sans-serif;
+    size: 15px;
+    weight: bold;
+  }
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.12);
+  color: #404040;
+}
+
+@mixin mainButton {
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  font-size: 11pt;
+  border: solid 1px #506292;
+  padding: 14px 28px;
+  background: #4d6297;
+  color: #f7f7f7;
+  font-weight: 300;
+  margin: 15px 5px;
+  border-radius: 4px;
+  width: fit-content;
+  box-shadow: 0px 3px 8px 2px #282c341c;
+  font-family: 'Montserrat', sans-serif;
+  &:hover {
+    text-decoration: none;
+    color: #f7f7f7;
+    background: #425483;
+  }
+
+  &:active {
+    text-decoration: none;
+    background: #536ba7;
+  }
+}
+
+@mixin rowFlexible-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin colFlexible-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin zebra() {
+  @for $i from 1 through 15 {
+    @if ($i % 2 == 1) {
+      .mainWrapper.row-#{$i} {
+        background-color: black;
+        color: red;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import 'src/modules/scss-mixins/Colors&Fonts.scss';
+
+
+.mainWrapper {
+  margin-top: 3vw;
+  margin-bottom: 4vw;
+
+
+}
+
+.header {
+  color: white !important;
+  font-weight: bold;
+  border-radius: 7px 7px 0 0;
+  padding: 1vh 2vw;
+  background-color: #4d6297;
+
+  .headerItem {
+    text-align: center;
+  }
+}
+
+

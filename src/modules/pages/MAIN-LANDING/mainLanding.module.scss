@@ -1,0 +1,14 @@
+.landingItems{
+  margin-bottom: 10vw;
+}
+
+.landingItems.tariffs{
+  padding-top: 2vw;
+  margin: 10vw 0;
+}
+
+@media screen and (max-width: 900px) {
+  .landingItems{
+    margin-bottom: 15vw;
+  }
+}
